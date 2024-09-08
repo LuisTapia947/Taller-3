@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 1</title>
+</head>
+
+<body>
+    <form>
+    <fieldset>
+        <legend>Your details</legend>
+        <label>1. name</label>
+        <input type="text" placeholder="firs and last name" pattern="[A-Za-z]+"><br>
+        <label>2. email</label>
+        <input type="email" placeholder="exaple@domain.com" maxlength="30"><br>
+        <label>3. phone</label>
+        <input type="number" placeholder="eg +4475000000">
+    </fieldset>
+    <fieldset>
+        <legend>Delivery address</legend>
+        <label>1. address</label><textarea ></textarea><br>
+        <label>2. post code</label>
+        <input type="text" minlength="6" maxlength="8"><br>
+        <label>3. country</label>
+        <input type="text">
+    </fieldset>
+    <fieldset>
+        <legend>Card details</legend>
+     <label>1.</label>
+        <fieldset>
+            <legend>Card tipe</legend>
+           <label>1.</label><input type="radio" name="card"><label>visa</label><br>
+           <label>2.</label><input type="radio" name="card"><label>AmEx</label><br>
+           <label>3.</label><input type="radio" name="card"><label>Mastercard</label>
+        </fieldset>
+        <label>2.card number</label>
+        <input type="text" minlength="1" maxlength="3"><br>
+        <label>3.Segurity code</label>
+        <input type="text" pattern="R\d+"><br>
+        <label>4. name on card</label>
+        <input type="text" placeholder=" exac name as on the card">
+        <hr>
+        <button type="submit">buy it!</button>
+    </fieldset>
+</form>
+</body>
+
+</html>
